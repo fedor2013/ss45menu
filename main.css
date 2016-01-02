@@ -1,0 +1,218 @@
+* {
+  padding: 0;
+  margin: 0;
+  font-family: 'Lato', sans-serif;
+  box-sizing: border-box;
+}
+
+.float-right {
+  float: right;
+}
+
+.fa {
+  font-size: .8em;
+  line-height: 22px !important;
+}
+
+dropdown {
+  display: inline-block;
+  margin: 20px 50px;
+}
+
+dropdown label, dropdown ul li {
+  display: block;
+  width: 200px;
+  background: #ECF0F1;
+  padding: 15px 20px;
+}
+
+dropdown label:hover, dropdown ul li:hover {
+  background: #1ABC9C;
+  color: white;
+  cursor: pointer;
+}
+
+dropdown label {
+  color: #1ABC9C;
+  border-bottom: 4px solid #1ABC9C;
+  border-radius: 0 5px 0 0;
+  position: relative;
+  z-index: 2;
+}
+
+dropdown input {
+  display: none;
+}
+
+dropdown input ~ ul {
+  position: relative;
+  visibility: hidden;
+  opacity: 0;
+  top: -20px;
+  z-index: 1;
+}
+
+dropdown input:checked + label {
+  background: #1ABC9C;
+  color: white;
+}
+
+dropdown input:checked ~ ul {
+  visibility: visible;
+  opacity: 1;
+  top: 0;
+}
+
+dropdown ul li:nth-child(1) {
+  border-left: 4px solid #E74C3C;
+}
+dropdown ul li:nth-child(1) .fa {
+  color: #E74C3C;
+}
+dropdown ul li:nth-child(1):hover {
+  background: #E74C3C;
+  color: white;
+}
+dropdown ul li:nth-child(1):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(2) {
+  border-left: 4px solid #0072B5;
+}
+dropdown ul li:nth-child(2) .fa {
+  color: #0072B5;
+}
+dropdown ul li:nth-child(2):hover {
+  background: #0072B5;
+  color: white;
+}
+dropdown ul li:nth-child(2):hover .fa {
+  color: white;
+}
+
+dropdown ul li:nth-child(3) {
+  border-left: 4px solid #2C3E50;
+}
+dropdown ul li:nth-child(3) .fa {
+  color: #2C3E50;
+}
+dropdown ul li:nth-child(3):hover {
+  background: #2C3E50;
+  color: white;
+}
+dropdown ul li:nth-child(3):hover .fa {
+  color: white;
+}
+
+.animate {
+  -webkit-transition: all .3s;
+  -moz-transition: all .3s;
+  -ms-transition: all .3s;
+  -ms-transition: all .3s;
+  transition: all .3s;
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
+  /* Chrome and Safari */
+  -moz-backface-visibility: hidden;
+  /* Firefox */
+  -ms-backface-visibility: hidden;
+  /* Internet Explorer */
+}
+
+.ttext{
+font-color: #66757F;
+}
+
+.fcolor{
+background-color: #f5f8fa;
+}
+
+.fmenu{
+background-color: #fff;
+}
+
+.u-text{
+font-size: 13px;
+}
+
+.textup{
+border-bottom: 4px solid #0084B4;
+display: inline-block;
+padding-top: -5px; 
+height: -10px;
+}
+
+ul li a:hover{   
+display: inline-block;   
+transition-duration: 0.5s;
+transition-property: box-shadow;   
+transform: translateZ(0);
+box-shadow: inset 0 -4px 0 0px #0084B4, 0 0 1px rgba(0, 0, 0, 0);
+width: 100%;  
+}
+
+/*блок выравнивания текста меню относительно иконок*/
+.utop{
+position: absolute;
+left: 50%;
+margin: 2% 0% 0% 25%;    
+}
+
+ a{
+margin-right: 30px;
+}
+
+a:hover .utop{
+position: fixed;
+left: 22px;
+top: 14px;
+}
+
+.utopPrice, .utopContact, .utopTrash, .utopEnter{
+position: absolute;
+left: 50%;
+margin: 2% 0% 0% 25%;    
+}
+
+ul li a:hover .utopPrice{    
+    left: 28%;
+    top: 25%;      
+}
+
+
+ul li a:hover .utopContact{
+    left: 26%;
+    top: 25%;    
+}
+
+ul li a:hover .utopTrash{
+    left: 26%;
+    top: 25%;
+}
+
+ul li a:hover .utopEnter{
+    left: 24%;
+    top: 26%;
+}
+
+/*мудохаемся с измененим цвета при наведении мышки и соответственно в состоянии без наведения курсора для текста*/
+ul li a span.letter{
+    color: #66757F;
+}
+
+ul li a:hover span.letter{
+    color: #0084B4;
+}
+
+/*мудохаемся с измененим цвета при наведении мышки и соответственно в состоянии без наведения курсора для иконок*/
+ul li a i.fa{
+    color: #66757F;
+}
+
+ul li a:hover i.fa{
+    color: #0084B4;
+}
+
+
+
